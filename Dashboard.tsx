@@ -1,15 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 
-// Định nghĩa props riêng
-interface DashboardProps {
+const Dashboard: React.FC<{
   onNavigate: (path: string) => void;
   onOpenShare: () => void;
-}
-
-const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
+}> = ({ onNavigate, onOpenShare }) => {
   const [illustration, setIllustration] = useState<string | null>(null);
-  const [scheduleMorning, setScheduleMorning] = useState<any[]>([]);
+  const [scheduleMorning, setScheduleMorning] = useState<any>([]);
   const [scheduleAfternoon, setScheduleAfternoon] = useState<any[]>([]);
   const [weeklyTasks, setWeeklyTasks] = useState<string[]>([]);
   const [newTaskInput, setNewTaskInput] = useState('');
