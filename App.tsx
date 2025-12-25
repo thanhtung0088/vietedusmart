@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import VietEduSidebar from './components/VietEduSidebar';
-import VietEduChat from './components/VietEduChat';
-import Dashboard from './pages/Dashboard';
-import LessonPlanner from './pages/LessonPlanner';
-import ClassBook from './pages/ClassBook';
-import GradeBook from './pages/GradeBook';
-import VideoHub from './pages/VideoHub';
-import ResourceHub from './pages/ResourceHub';
-import Timetable from './pages/Timetable';
-import ProfessionalPlan from './pages/ProfessionalPlan';
-import Rubrics from './pages/Rubrics';
+import VietEduSidebar from './VietEduSidebar';
+import VietEduChat from './VietEduChat';
+import Dashboard from './Dashboard';
+import LessonPlanner from './LessonPlanner';
+import ClassBook from './ClassBook';
+import GradeBook from './/GradeBook';
+import VideoHub from './VideoHub';
+import ResourceHub from './ResourceHub';
+import Timetable from './Timetable';
+import ProfessionalPlan from './ProfessionalPlan';
+import Rubrics from './Rubrics';
 import { UserRole } from './types';
 
 const App: React.FC = () => {
