@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-// Định nghĩa kiểu props đúng cách
-interface DashboardProps {
+const Dashboard: React.FC<{
   onNavigate: (path: string) => void;
   onOpenShare: () => void;
-}
-
-  const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
+}> = ({ onNavigate, onOpenShare }) => {
   const [illustration, setIllustration] = useState<string | null>(null);
-  const [scheduleMorning, setScheduleMorning] = useState<any>([]);
+  const [scheduleMorning, setScheduleMorning] = useState<any[]>([]);
+
+  // các state khác và toàn bộ code còn lại giữ nguyên 100%
   const [newTaskInput, setNewTaskInput] = useState('');
 
   // các state khác và toàn bộ code còn lại giữ nguyên 100%
