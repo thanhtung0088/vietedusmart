@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
-import Sidebar from "./Sidebar.tsx";
-import AIChatbox from "./AIChatbox.tsx";
-import Dashboard from "./Dashboard.tsx";
-import LessonPlanner from "./LessonPlanner.tsx";
-import ClassBook from "./ClassBook.tsx";
+import Sidebar from './components/Sidebar';
+import AIChatbox from './components/AIChatbox';
+import Dashboard from './pages/Dashboard';
+import LessonPlanner from './pages/LessonPlanner';
+import ClassBook from './pages/ClassBook';
+import GradeBook from './pages/GradeBook';
+import VideoHub from './pages/VideoHub';
+import ResourceHub from './pages/ResourceHub';
+import Timetable from './pages/Timetable';
+import ProfessionalPlan from './pages/ProfessionalPlan';
+import Rubrics from './pages/Rubrics';
+import { UserRole } from './types';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('dashboard');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [role, setRole] = useState<UserRole>(UserRole.TEACHER);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
+
   const navigateTo = (path: string) => setCurrentPath(path);
   const handleBack = () => navigateTo('dashboard');
 
