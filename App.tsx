@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import VietEduSidebar from './components/VietEduSidebar.tsx';
-import VietEduChat from './components/VietEduChat.tsx';
-import Dashboard from './pages/Dashboard.tsx';
-import LessonPlanner from './pages/LessonPlanner.tsx';
-import ClassBook from './pages/ClassBook.tsx';
-import GradeBook from './pages/GradeBook.tsx';
-import VideoHub from './pages/VideoHub.tsx';
-import ResourceHub from './pages/ResourceHub.tsx';
-import Timetable from './pages/Timetable.tsx';
-import ProfessionalPlan from './pages/ProfessionalPlan.tsx';
-import Rubrics from './pages/Rubrics.tsx';
-import { UserRole } from './types.ts';
+import Sidebar from './components/Sidebar';
+import AIChatbox from './components/AIChatbox';
+import Dashboard from './pages/Dashboard';
+import LessonPlanner from './pages/LessonPlanner';
+import ClassBook from './pages/ClassBook';
+import GradeBook from './pages/GradeBook';
+import VideoHub from './pages/VideoHub';
+import ResourceHub from './pages/ResourceHub';
+import Timetable from './pages/Timetable';
+import ProfessionalPlan from './pages/ProfessionalPlan';
+import Rubrics from './pages/Rubrics';
+import { UserRole } from './types';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('dashboard');
@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
   return (
     <div className="flex min-h-screen bg-[#f1f5f9]">
-      <VietEduSidebar 
+      <Sidebar 
         currentPath={currentPath} 
         onNavigate={navigateTo} 
         role={role} 
@@ -70,7 +70,7 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <VietEduChat />
+      <AIChatbox />
 
       {isShareModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-300">
