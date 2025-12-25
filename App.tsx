@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import AIChatbox from './components/AIChatbox';
+import Sidebar from './components/Sidebar.tsx';
+import AIChatbox from './components/AIChatbox.tsx';
 import Dashboard from './pages/Dashboard';
 import LessonPlanner from './pages/LessonPlanner';
 import ClassBook from './pages/ClassBook';
