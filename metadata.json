@@ -1,0 +1,9 @@
+
+{
+  "name": "VietEdu Smart - Hệ sinh thái Giáo dục Số 4.0",
+  "description": "Nền tảng giáo dục số thông minh dành cho giáo viên Việt Nam, tích hợp AI soạn giảng và quản lý chuyên môn.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
