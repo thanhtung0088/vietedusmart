@@ -4,8 +4,6 @@ const Dashboard: React.FC<{
   onNavigate: (path: string) => void;
   onOpenShare: () => void;
 }> = ({ onNavigate, onOpenShare }) => {
-  const [illustration, setIllustration] = useState<string | null>(null);
-  const [scheduleMorning, setScheduleMorning] = useState<any[]>([]);
 
   // các state khác và toàn bộ code còn lại giữ nguyên 100%
   const [newTaskInput, setNewTaskInput] = useState('');
