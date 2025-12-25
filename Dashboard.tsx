@@ -1,8 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-import React, { useState, useEffect } from 'react';
-
 // Định nghĩa props riêng
 interface DashboardProps {
   onNavigate: (path: string) => void;
@@ -10,8 +8,6 @@ interface DashboardProps {
 }
 
 const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
-  const [illustration, setIllustration] = useState<string | null>(null);
-  const [scheduleMorning, setScheduleMorning] = useState<any>([]);
   const [illustration, setIllustration] = useState<string | null>(null);
   const [scheduleMorning, setScheduleMorning] = useState<any[]>([]);
   const [scheduleAfternoon, setScheduleAfternoon] = useState<any[]>([]);
