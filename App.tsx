@@ -46,7 +46,6 @@ const App: React.FC = () => {
 
   return (
     <div className="flex min-h-screen bg-[#f1f5f9]">
-      <VietEduSidebar 
         currentPath={currentPath} 
         onNavigate={navigateTo} 
         role={role} 
@@ -68,7 +67,6 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <VietEduChat />
 
       {isShareModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-300">
