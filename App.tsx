@@ -7,7 +7,6 @@ import ClassBook from './pages/ClassBook';
 import GradeBook from './pages/GradeBook';
 import VideoHub from './pages/VideoHub';
 import ResourceHub from './pages/ResourceHub';
-import GameCenter from './pages/GameCenter';
 import Timetable from './pages/Timetable';
 import ProfessionalPlan from './pages/ProfessionalPlan';
 import Rubrics from './pages/Rubrics';
