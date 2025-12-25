@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
-import AIChatbox from './components/AIChatbox';
+import VietEduSidebar from './components/VietEduSidebar';
+import VietEduChat from './components/VietEduChat';
 import Dashboard from './pages/Dashboard';
 import LessonPlanner from './pages/LessonPlanner';
 import ClassBook from './pages/ClassBook';
@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
   return (
     <div className="flex min-h-screen bg-[#f1f5f9]">
-      <Sidebar 
+      <VietEduSidebar 
         currentPath={currentPath} 
         onNavigate={navigateTo} 
         role={role} 
@@ -70,7 +70,7 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <AIChatbox />
+      <VietEduChat />
 
       {isShareModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4 animate-in fade-in duration-300">
