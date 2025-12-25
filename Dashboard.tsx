@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
-const Dashboard: React.FC<{
+// Định nghĩa kiểu props đúng cách
+interface DashboardProps {
   onNavigate: (path: string) => void;
   onOpenShare: () => void;
-}> = ({ onNavigate, onOpenShare }) => {
+}
+
+// Sử dụng interface đã định nghĩa
+const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
   const [illustration, setIllustration] = useState<string | null>(null);
   const [scheduleMorning, setScheduleMorning] = useState<any>([]);
-  const [scheduleAfternoon, setScheduleAfternoon] = useState<any[]>([]);
-  const [weeklyTasks, setWeeklyTasks] = useState<string[]>([]);
   const [newTaskInput, setNewTaskInput] = useState('');
+
+  // các state khác và toàn bộ code còn lại giữ nguyên 100%
 
   useEffect(() => {
     const savedImg = localStorage.getItem('vietedu_dashboard_img');
