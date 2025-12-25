@@ -15,7 +15,7 @@ import { UserRole } from './types.tsx';
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('dashboard');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [role, setRole] = useState<UserRole>(UserRole.TEACHER);
+  const [role, setRole] = useState(UserRole.TEACHER);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   const navigateTo = (path: string) => setCurrentPath(path);
