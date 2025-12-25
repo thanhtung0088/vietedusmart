@@ -10,7 +10,6 @@ import Timetable from './Timetable';
 import ProfessionalPlan from './ProfessionalPlan';
 import Rubrics from './Rubrics';
 
-import VietEduSidebar from './components/VietEduSidebar';
 import { UserRole } from './types';
 
 const App: React.FC = () => {
@@ -62,15 +61,6 @@ const App: React.FC = () => {
   return (
     <div className="flex min-h-screen bg-[#f1f5f9]">
       {/* SIDEBAR */}
-      <VietEduSidebar
-        currentPath={currentPath}
-        onNavigate={navigateTo}
-        role={role}
-        onOpenSecurity={() =>
-          alert('Dữ liệu được bảo vệ đa lớp bởi VietEdu.')
-        }
-        onOpenShare={() => setIsShareModalOpen(true)}
-      />
 
       {/* MAIN */}
       <main className="flex-1 ml-64 p-6 min-h-screen">
