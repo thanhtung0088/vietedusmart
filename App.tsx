@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar';
+import Sidebar from './Sidebar';
 import AIChatbox from './components/AIChatbox';
 import Dashboard from './pages/Dashboard';
 import LessonPlanner from './pages/LessonPlanner';
