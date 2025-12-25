@@ -6,8 +6,7 @@ interface DashboardProps {
   onOpenShare: () => void;
 }
 
-// Sử dụng interface đã định nghĩa
-const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
+  const Dashboard: React.FC<DashboardProps> = ({ onNavigate, onOpenShare }) => {
   const [illustration, setIllustration] = useState<string | null>(null);
   const [scheduleMorning, setScheduleMorning] = useState<any>([]);
   const [newTaskInput, setNewTaskInput] = useState('');
