@@ -1,18 +1,17 @@
-
 import React, { useState } from 'react';
-import Sidebar from './components/Sidebar.tsx';
-import AIChatbox from './components/AIChatbox.tsx';
-import Dashboard from './pages/Dashboard.tsx';
-import LessonPlanner from './pages/LessonPlanner.tsx';
-import ClassBook from './pages/ClassBook.tsx';
-import GradeBook from './pages/GradeBook.tsx';
-import VideoHub from './pages/VideoHub.tsx';
-import ResourceHub from './pages/ResourceHub.tsx';
-import GameCenter from './pages/GameCenter.tsx';
-import Timetable from './pages/Timetable.tsx';
-import ProfessionalPlan from './pages/ProfessionalPlan.tsx';
-import Rubrics from './pages/Rubrics.tsx';
-import { UserRole } from './types.ts';
+import Sidebar from './components/Sidebar';
+import AIChatbox from './components/AIChatbox';
+import Dashboard from './pages/Dashboard';
+import LessonPlanner from './pages/LessonPlanner';
+import ClassBook from './pages/ClassBook';
+import GradeBook from './pages/GradeBook';
+import VideoHub from './pages/VideoHub';
+import ResourceHub from './pages/ResourceHub';
+import GameCenter from './pages/GameCenter';
+import Timetable from './pages/Timetable';
+import ProfessionalPlan from './pages/ProfessionalPlan';
+import Rubrics from './pages/Rubrics';
+import { UserRole } from './types';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('dashboard');
@@ -66,7 +65,6 @@ const App: React.FC = () => {
           {currentPath === 'class-book' && <ClassBook onBack={handleBack} />}
           {currentPath === 'videos' && <VideoHub onBack={handleBack} />}
           {currentPath === 'resources' && <ResourceHub onBack={handleBack} />}
-          {currentPath === 'games' && <GameCenter onBack={handleBack} />}
           {currentPath === 'schedule' && <Timetable onBack={handleBack} />}
           {currentPath === 'pro-plan' && <ProfessionalPlan onBack={handleBack} />}
           {currentPath === 'rubrics' && <Rubrics onBack={handleBack} />}
