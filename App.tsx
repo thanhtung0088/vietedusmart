@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import Sidebar from "./Sidebar.tsx";
-import AIChatbox from "./AIChatbox";
-import Dashboard from './pages/Dashboard';
-import LessonPlanner from './pages/LessonPlanner';
-import ClassBook from './pages/ClassBook';
-import GradeBook from './pages/GradeBook';
-import VideoHub from './pages/VideoHub';
-import ResourceHub from './pages/ResourceHub';
-import Timetable from './pages/Timetable';
-import ProfessionalPlan from './pages/ProfessionalPlan';
-import Rubrics from './pages/Rubrics';
-import { UserRole } from './types';
+import AIChatbox from "./AIChatbox.tsx";
+import Dashboard from './Dashboard.tsx';
+import LessonPlanner from './LessonPlanner.tsx';
+import ClassBook from './ClassBook.tsx';
+import GradeBook from './GradeBook.tsx';
+import VideoHub from './VideoHub.tsx';
+import ResourceHub from './ResourceHub.tsx';
+import Timetable from './Timetable.tsx';
+import ProfessionalPlan from './ProfessionalPlan.tsx';
+import Rubrics from './/Rubrics.tsx';
+import { UserRole } from './types.tsx';
 
 const App: React.FC = () => {
   const [currentPath, setCurrentPath] = useState('dashboard');
