@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import VietEduSidebar from './VietEduSidebar';
 import VietEduChat from './VietEduChat';
 import Dashboard from './Dashboard';
 import LessonPlanner from './LessonPlanner';
