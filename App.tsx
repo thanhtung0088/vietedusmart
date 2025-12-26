@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import VietEduSidebar from './VietEduSidebar';
-import VietEduChat from './VietEduChat';
+import VietEduSidebar from './components/VietEduSidebar';
+import VietEduChat from './components/VietEduChat';
 import Dashboard from './pages/Dashboard';
 import LessonPlanner from './pages/LessonPlanner';
 import ClassBook from './pages/ClassBook';
