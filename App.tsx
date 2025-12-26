@@ -4,7 +4,7 @@ import VietEduChat from './components/VietEduChat';
 import Dashboard from './pages/Dashboard';
 import LessonPlanner from './pages/LessonPlanner';
 import ClassBook from './pages/ClassBook';
-import GradeBook from './pages/GradeBook'; // Đã sửa đường dẫn này
+import GradeBook from './pages/GradeBook'; 
 import VideoHub from './pages/VideoHub';
 import ResourceHub from './pages/ResourceHub';
 import Timetable from './pages/Timetable';
